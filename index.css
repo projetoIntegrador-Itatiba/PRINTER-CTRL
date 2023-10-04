@@ -1,0 +1,36 @@
+body {
+    height: 100vh;
+}
+
+form {
+    background: #FFFFFF;
+    width: 300px;
+    padding: 100px;
+    border: 1px solid #CCCCCC;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.356);
+    border-radius: 10px;
+}
+
+div.img {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 275px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+input {
+    border: 1px solid #CCCCCC;
+    outline: none;
+    margin: 5px 0px;
+}
+
+button {
+    cursor: pointer;
+    margin: 5px 0px;
+
+}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Controle de Impressoras</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../../global.css">
+</head>
+<body>
+    <header>
+        
+        <nav class="nav-container fixed top">
+            <h3 id="logo">
+                Cadastro de Impressoras
+            </h3>
+            <div class="hamburguer">
+                <span class="lines"></span>
+                <span class="lines"></span>
+                <span class="lines"></span>
+            </div>
+        
+            <ul id="nav-links">
+                <li><a href="#" class="links">Home</a></li>
+                <li><a href="#" class="links">Cadastrar Impressora</a></li>
+                <li><button type="button" class="logoutbtn" onclick="logout()">Sair</button></li>
+            </ul>
+        
+        </nav>
+    </header>
+
+    <ol>
+        <li class="item-list">
+            <p><b>PSF Cecap</b></p>
+            <p>Brother HL6202DW</p>
+            <p>TCP/IP</p>
+            <p>172.29.170.14</p>
+            <p>Própria</p>
+        </li>
+        <li class="item-list">
+            <b>Fármacia Alto Custo</b>
+            <p>Samsung SCX4835</p>
+            <p>TCP/IP</p>
+            <p>172.29.170.5</p>
+            <p>Alugada</p>
+        </li>
+        <li class="item-list">
+            <b>PSF Harmonia</b>
+            <p>Brother HL6202DW</p>
+            <p>Compartilhada</p>
+            <p>\\pisauc1082</p>
+            <p>Própria</p>
+        </li>
+        <li class="item-list">
+            <b>UBS Morro Azul</b>
+            <p>Samsung ML7350</p>
+            <p>Compartilhada</p>
+            <p>\\Ubs_Morro_Azul</p>
+            <p>Própria</p>
+        </li>
+    </ol>
+    
+
+
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="../../firebase-init.js"></script>
+<script src="../../auth-guard.js"></script>
+<script src="home.js"></script>
+
+
+
+</html>

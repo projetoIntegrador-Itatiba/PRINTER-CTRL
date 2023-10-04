@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Controle de Impressoras</title>
+    <link rel="stylesheet" href="../../global.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body class="centralize">
+    <form>
+        <div class="img">
+            <img src="../../logo_pmi.jpg" alt="logo_prefeitura_de_itatiba">
+        </div>
+        <div>
+            <h2>Registre-se</h1>
+        </div>
+        <div class="form-field">
+            <div><label for="email">Digite seu e-mail:</label></div>
+            <input type="email" name="email" id="email" placeholder="seu@email.com" onchange="onChangeEmail()">
+            <div class="error" id="email-required-error">Email é obrigatório</div>
+            <div class="error" id="email-invalid-error">Email é inválido</div>
+        </div>
+        <div class="form-field">
+            <div><label for="password">Digite uma senha:</label></div>
+            <input type="password" name="password" id="password" placeholder="Senha" onchange="onChangePassword()">
+            <div class="error" id="password-required-error">Senha é obrigatório</div>
+            <div class="error" id="password-min-length-error">Senha deve ter no mínimo 6 caracteres</div>
+        </div>
+        <div class="form-field">
+            <div><label for="confirmpassword">Confirme sua senha:</label></div>
+            <input type="password" name="confirmpassword" id="confirmPassword" placeholder="Confirme sua senha" onchange="onChangeConfirmPassword()">
+            <div class="error" id="password-doesnt-match-error">As senhas não coincidem</div>
+        </div>
+        <div>
+            <button type="button" class="solid" disabled id="register-button" onclick="register()">Registrar</button>
+        </div>
+        <div>
+            <button type="button" class="clear" onclick="toLoginPage()">Login</button>
+        </div>
+    </form>
+
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="../../firebase-init.js"></script>
+
+    <script src="register.js"></script>
+    <script src="../../validations.js"></script>
+    <script src="../../loading.js"></script>
+    
+   
+</body>
+</html>
