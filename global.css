@@ -35,6 +35,7 @@ button.logoutbtn {
   font-weight: 600;
 }
 
+
 button:active {
     opacity: 0.8;
 }
@@ -68,6 +69,7 @@ input, button {
   width: -webkit-fill-available;
   border-radius: 8px;
 }
+
 
 
 /* AQUI É O CSS DO COMPONENTE DE LOADING */

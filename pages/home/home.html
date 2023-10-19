@@ -22,13 +22,23 @@
         
             <ul id="nav-links">
                 <li><a href="#" class="links">Home</a></li>
-                <li><a href="#" class="links">Cadastrar Impressora</a></li>
+                <li><a href="#" class="links" id="open-modal">Cadastrar Impressora</a></li>
                 <li><button type="button" class="logoutbtn" onclick="logout()">Sair</button></li>
             </ul>
         
         </nav>
     </header>
-
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modal-header">
+            <h2 class="modal-title">Cadastro de impressora</h2>
+            <button id="close-modal">Fechar</button>
+        </div>
+        <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed ipsam, voluptates sint, est tempore sunt ullam, quas explicabo qui quae dolorem aliquam? Ipsam aperiam eveniet eligendi voluptas quibusdam repellendus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel esse fugiat architecto minus ipsum! Error fugit maiores distinctio incidunt fugiat nobis voluptatibus, possimus soluta deleniti recusandae ipsam aspernatur ex.</p>
+        </div>
+    </div>
     <ol>
         <li class="item-list">
             <p><b>PSF Cecap</b></p>
