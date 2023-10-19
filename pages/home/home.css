@@ -81,7 +81,7 @@ li a:hover {
 }
 
 button#close-modal {
-    width: 100px;
+    width: 500px;
     border: none;
     border-radius: .25rem;
     opacity: 0.8;
@@ -180,4 +180,5 @@ button#close-modal:hover {
         border-bottom: 2px #3276B1 solid;
         transition: 0.5s;
     }
+
 }

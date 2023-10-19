@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Controle de Impressoras</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="form-home.css">
     <link rel="stylesheet" href="../../global.css">
+
 </head>
 <body>
     <header>
@@ -20,8 +22,7 @@
                 <span class="lines"></span>
             </div>
         
-            <ul id="nav-links">
-                <li><a href="#" class="links">Home</a></li>
+            <ul id="nav-links">                
                 <li><a href="#" class="links" id="open-modal">Cadastrar Impressora</a></li>
                 <li><button type="button" class="logoutbtn" onclick="logout()">Sair</button></li>
             </ul>
@@ -30,13 +31,26 @@
     </header>
     <div id="fade" class="hide"></div>
     <div id="modal" class="hide">
-        <div class="modal-header">
-            <h2 class="modal-title">Cadastro de impressora</h2>
-            <button id="close-modal">Fechar</button>
-        </div>
         <div class="modal-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sed ipsam, voluptates sint, est tempore sunt ullam, quas explicabo qui quae dolorem aliquam? Ipsam aperiam eveniet eligendi voluptas quibusdam repellendus!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque vel esse fugiat architecto minus ipsum! Error fugit maiores distinctio incidunt fugiat nobis voluptatibus, possimus soluta deleniti recusandae ipsam aspernatur ex.</p>
+            <form action="" method="">
+                <label for="ip">Endereço IP:</label>
+                <input type="text" id="ip" name="ip" required>
+        
+                <label for="modelo">Modelo:</label>
+                <input type="text" id="modelo" name="modelo" required>
+        
+                <label for="local">Local:</label>
+                <input type="text" id="local" name="local" required>
+        
+                <label for="manutencao">Manutenção:</label>
+                <input type="text" id="manutencao" name="manutencao" required>
+        
+                <label for="observacao">Observação:</label>
+                <textarea id="observacao" name="observacao" rows="4"></textarea>
+        
+                <button id="save-impressora" type="submit">Salvar Impressora</button>
+                <button id="close-modal">Fechar</button>
+            </form>
         </div>
     </div>
     <ol>
